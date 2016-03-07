@@ -1,0 +1,18 @@
+<div layout="row">
+  <div layout="column" ng-show="ctrl.isState('main.opportunities')">
+    <md-button class="md-icon-button md-primary filter-button" ng-click="ctrl.toggleMenu()">
+      <i class="material-icons">dehaze</i>
+    </md-button>
+  </div>
+  <div layout="column" flex>
+    <div layout="row" flex>
+      <md-tabs flex md-align-tabs="top" md-selected="ctrl.tabIndex" class="app-navigation">
+        <md-tab ng-repeat="tab in ::ctrl.tabs" ui-sref="{{tab.state}}">
+          <md-tab-label>
+            <span>{{tab.label}}</span>
+          </md-tab-label>
+        </md-tab>
+      </md-tabs>
+    </div>
+  </div>
+</div>

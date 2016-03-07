@@ -1,0 +1,18 @@
+<div layout="row" flex layout-padding>
+    <md-content layout="column" flex>
+      <md-input-container class="md-block">
+        <label>First Name</label>
+        <input ng-model="ctrl.aboutService.user.firstName">
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Last Name</label>
+        <input ng-model="ctrl.aboutService.user.lastName">
+      </md-input-container>
+      <div md-color-picker ng-model="ctrl.aboutService.user.color"></div>
+      <section layout="row" layout-align="top end" layout-wrap>
+        <md-button class="md-raised md-warn" ng-click="ctrl.aboutService.delete()">Delete</md-button>
+        <md-button class="md-raised" ng-click="ctrl.aboutService.save()">Save</md-button>
+      </section>
+
+    </md-content>
+</div>

@@ -1,0 +1,50 @@
+.opportunity-content {
+  background-color: #f1f1f1;
+
+  .card-list-wrapper {
+    padding: 10px;
+    .opportunity-card {
+      max-height: 300px;
+      border-width: 0;
+      border: 1px solid #666;
+      border-color: #e5e5e5;
+
+      img {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      md-checkbox {
+        > .md-container {
+          left: auto;
+          right: 0;
+        }
+
+        .md-label {
+          margin-right: 30px;
+          margin-left: 0;
+          text-align: right;
+        }
+      }
+
+      md-grid-tile-header {
+        padding-left: 5px;
+
+        figcaption {
+          margin-right: 0;
+          margin-left: auto;
+        }
+      }
+
+      md-grid-tile-footer {
+        padding-left: 10px;
+      }
+
+      md-grid-tile-header,
+      md-grid-tile-footer {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<md-content layout="row" flex layout-column id="content" class="opportunity-content">
+  <div layout="column" flex class="card-list-wrapper">
+
+    <md-grid-list layout="column"
+          md-cols-xs="2" md-cols-sm="4" md-cols-md="4" md-cols-gt-md="6"
+          md-row-height-gt-md="1:1" md-row-height="2:2"
+          md-gutter="12px" md-gutter-gt-sm="8px" >
+
+      <md-grid-tile
+        class="opportunity-card repeated-item"
+        ng-repeat="opportunity in ctrl.opportunityService.opportunities | filter: ctrl.opportunityService.filterFn track by opportunity.id"
+        md-rowspan="2"
+        md-colspan="2">
+        <md-grid-tile-header>
+          <md-content layout-padding>
+            <md-checkbox class="no-margin-bottom" layout-align="end" ng-model="opportunity.selected">
+               {{opportunity.status}}
+            </md-checkbox>
+          </md-content>
+        </md-grid-tile-header>
+        <img flex ng-src="{{opportunity.image_url}}"/>
+        <md-grid-tile-footer>
+          {{opportunity.domain}}
+        </md-grid-tile-footer>
+      </md-grid-tile><!-- tile/card -->
+
+    </md-grid-list>
+  </div>
+</md-content>

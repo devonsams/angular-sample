@@ -1,0 +1,18 @@
+<md-sidenav layout-row flex md-component-id="filterNav" md-is-locked-open="$mdMedia('gt-sm')" class="opportunity-filters">
+  <md-content layout="column" flex layout-padding role="navigation">
+    <h1 class="md-title no-margin-bottom">Status</h1>
+    <div layout="row">
+      <md-checkbox class="no-margin-bottom" ng-model="ctrl.opportunityService.new">
+         New
+      </md-checkbox>
+    </div>
+    <div layout="row">
+      <md-checkbox class="no-margin-bottom" ng-model="ctrl.opportunityService.existing">
+         Existing
+      </md-checkbox>
+    </div>
+    <div layout="row" flex layout-align="start end">
+      <md-button class="viewSelectionButton" ng-click="ctrl.showSelected($event)">Show Selected</md-button>
+    </div>
+  </md-content>
+</md-sidenav>

@@ -1,0 +1,19 @@
+{
+  "name": "angular-sample",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Devon Sams"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pos1tron/angular-sample",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "~0.2.18",
+    "angular-material": "^1.0.6",
+    "angular-local-storage": "^0.2.5",
+    "md-color-picker": "*"
+  }
+}

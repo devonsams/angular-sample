@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Devon Sams - Angular Sample</title>
+  <base href="/" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- build:css app/vendor.min.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="bower_components/md-color-picker/dist/mdColorPicker.min.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css app/app.min.css -->
+  <link rel="stylesheet" href="app/app.css" />
+  <!-- endbuild -->
+</head>
+<body ng-app="angular.sample">
+
+  <div layout="row" layout-fill>
+    <div ui-view="" flex layout="column"></div>
+  </div>
+  <!-- build:js app/vendor.min.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <script src="bower_components/tinycolor/tinycolor.js"></script>
+  <script src="bower_components/md-color-picker/dist/mdColorPicker.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js app/app.min.js -->
+  <script src="app/app.js"></script>
+  <!-- injector:js -->
+  <script src="app/main/main.component.js"></script>
+  <script src="app/main/main.js"></script>
+  <script src="common/modules/templates.module.js"></script>
+  <script src="common/services/about.service.js"></script>
+  <script src="common/services/opportunity.service.js"></script>
+  <script src="app/main/about/about.component.js"></script>
+  <script src="app/main/about/about.js"></script>
+  <script src="app/main/opportunities/opportunities.component.js"></script>
+  <script src="app/main/opportunities/opportunities.js"></script>
+  <script src="common/components/navigation/navigation.component.js"></script>
+  <script src="app/main/opportunities/content/content.component.js"></script>
+  <script src="app/main/opportunities/filter/filter.component.js"></script>
+  <script src="app/main/opportunities/selected/selected.component.js"></script>
+  <!-- endinjector -->
+  <!-- endbuild -->
+</body>
+</html>
